@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -10,10 +10,37 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    font-size: 17px;
 }
-.contakt{
+
+.droplist {
+    position: absolute;
+    top: -190px;
+    left: 20px;
+    transition: 1s;
+}
+
+.about-us {
+    position: relative;
+    color: white;
+    font-size: 17px;
+}
+
+.about-us:hover .droplist {
+    top: 20px;
+}
+.about-us-droplist{
+    color: white;
+    font-size:17px;
+}
+
+.contakt {
     text-decoration: none;
+}
+.otziv{
+    color: white;
 }
 
 .intro {
@@ -30,7 +57,8 @@ header {
     max-width: 1200px;
     margin: 0 auto;
 }
-.cotalog-title{
+
+.cotalog-title {
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 25px;
@@ -42,137 +70,166 @@ header {
 }
 
 .intro-text {
-    max-width: 400px ;
+    max-width: 400px;
     margin-top: 20px;
     margin-bottom: 150px;
     font-size: -20px;
     opacity: 0.5;
 }
-.intro-button{
+
+.intro-button {
     text-decoration: none;
     color: white;
     background-color: rgb(81, 81, 255);
     padding: 10px 20px;
     border-radius: 4px;
-}  
-.intro-button:hover{
-    background-color: rgb(158, 158, 255);
     transition: 0.2s;
+
 }
-.products{
+
+.intro-button:hover {
+    background-color: rgb(1, 1, 167);
+    font-size: 17px; 
+    position: relative;
+}
+
+.products {
     display: flex;
     flex-wrap: wrap;
     gap: 50px 25px;
     justify-content: center;
-}     
-.product-card{
+}
+
+.product-card {
     max-width: 280px;
+    width: 100%;
     border-radius: 6px;
     overflow: hidden;
     display: flex;
-    flex-direction: column ;
-    transition: 0.2s ;
+    flex-direction: column;
+    transition: 0.2s;
+    padding: 10px;
 }
-.product-card:hover{
+
+.product-card:hover {
     transform: scale(1.01);
     box-shadow: 0px -5px 10px 5px rgba(0, 0, 0, 0.5)
 }
-.product-img img{
-    max-width: 100%;
+
+.product-img img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 6px;
 }
-.product-img{
+
+.product-img {
     width: 100%;
     height: 300px;
-
 }
-.cotalog-title{
+
+.cotalog-title {
     margin-top: 70px;
     margin-bottom: 70px;
-    text-align:center;
+    text-align: center;
 }
-.product-btn{
-    margin-top: 10px;
+
+.product-btn {
+    margin-top: 20px;
     text-decoration: none;
     color: white;
     background-color: rgb(3, 3, 3);
     padding: 8px 20px;
     border-radius: 20px;
     border: 0;
-    font-size: 12px;
+    font-size: 18px;
     cursor: pointer;
-    transition: 0.2s ;
+    transition: 0.2s;
 
 }
-.product-btn:hover{
+
+.product-btn:hover {
     background-color: rgb(58, 58, 58);
     transition: 0.2s;
 }
-.text-explanation{
+
+.text-explanation {
     font-size: medium;
     max-width: 1000px;
     text-align: center;
     margin: 0 auto;
 }
-.text-explanation1{ 
-    color:white;
+
+.text-explanation1 {
+    color: white;
 }
-.explanation{
+
+.explanation {
     background-color: black;
     color: white;
     height: 400px;
     margin-top: 100px;
 }
-.obout{
+
+.obout {
     margin-left: 20px;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
 }
-.menu-link{
+
+.menu-link {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.client{ 
+
+.client {
     margin-left: 20px;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
 }
-.footer-obout-client{
+
+.footer-obout-client {
     display: flex;
     color: rgb(28, 28, 28);
     text-decoration: none;
 }
-.footer-time-inf{
+
+.footer-time-inf {
     display: flex;
 }
-.footer-inf{
+
+.footer-inf {
     margin-left: 50px;
 }
-.footer-all{
+
+.footer-all {
     display: flex;
 }
-.icon-link{
-    margin:5px;
+
+.icon-link {
+    margin: 5px;
     width: 30px;
     height: 30px;
 }
-.icon-link1{
+
+.icon-link1 {
     width: 49x;
     height: 30px;
-    margin:5px
+    margin: 5px
 }
-.icon-link2{
-    
+
+.icon-link2 {
+
     width: 49x;
     height: 30px;
-    margin:5px; 
-    margin-left:10px;
+    margin: 5px;
+    margin-left: 10px;
 }
-.sotseti{
+
+.sotseti {
     margin-left: 40px;
 }
-.footer-time1{
+
+.footer-time1 {
     font-size: 20px;
 }
